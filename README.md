@@ -1,5 +1,6 @@
 # student-assignment-1
-Logic Assesment
+## Logic Assesment
+
 1. const playlist = ['life breath','change','lion king','Alive','Hallelujah', 'victory']
 using the array above write a program that can alert the elements at random when the page is refreshed, if it alerts lion king then let the program request for the player's name , and finally alert his name with a winning price of 100 US dollars (eg congratulations Joseph you have won 100 US Dollars)
 

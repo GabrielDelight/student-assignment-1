@@ -191,8 +191,8 @@ The straightforward website we'll be building with Locomotive Scroll is shown be
 
 
 Code:
-
-    <!DOCTYPE html>
+```html
+   <!DOCTYPE html>
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
@@ -322,6 +322,7 @@ Code:
         });
       </script>
     </html>
+```
     
 
 The aforementioned code includes the fundamental CSS styles, the actual HTML code that contains the attributes from the locomotive scroll, and the configuration-related javascript code.
@@ -333,18 +334,20 @@ By clicking [here](https://github.com/GabrielDelight/locomotive-scroll-website),
 Installing and configuring React Scroll Parallax is something we'll do in this section. We'll also talk about how to use it to build a basic website in this article.
 Run `npm I react-scroll-parallax` in your terminal to install the library. You must import the library into your React application after installation. Use the code below to import the library:
 
-
-    import { useParallax } from "react-scroll-parallax";
+```ja
+import { useParallax } from "react-scroll-parallax";
+```
 
 Utilizing React Scroll Parallax comes after the importation. However, let's first go over the library and how to use the component before we begin writing codes.
 Using React Scroll Parallax, you can create components with objects like [translate](https://react-scroll-parallax.damnthat.tv/docs/usage/parallax-props#available-css-effects), [scale](https://react-scroll-parallax.damnthat.tv/docs/examples/scroll-effects#scale), [rotate](https://react-scroll-parallax.damnthat.tv/docs/usage/parallax-props#available-css-effects), and adjust [speed](https://react-scroll-parallax.damnthat.tv/docs/usage/components/parallax-component#speed-control).
 
 For the benefit of the website, we'll be using the [Parallax component](https://react-scroll-parallax.damnthat.tv/docs/usage/components/parallax-banner-component), which consists of the objects scaleX, rotatey, translateX, translatey, and easing. An array that is a little complicated to set the direction of the object is given to it as a value. However, in order to learn more about these objects from the Parallax component, you must visit the official docs. But before you go to the website to learn more, take a look at the syntax of a straightforward [scaleX-based](https://react-scroll-parallax.damnthat.tv/docs/usage/parallax-props#available-css-effects) parallax component.
 
-
-      const scaleCParallax = useParallax({
-        scaleX: [0, 3, "easeInQuad"],
-      });
+```js
+const scaleCParallax = useParallax({
+  scaleX: [0, 3, "easeInQuad"],
+});
+```
 
 
 Below is an output of the simple web page I created with react-scroll-parallax:
@@ -357,153 +360,155 @@ Below is an output of the simple web page I created with react-scroll-parallax:
 
 React code:
 
-
-    import "./App.css";
-    import { useParallax } from "react-scroll-parallax";
-    const App = () => {
-      const scaleCParallax = useParallax({
-        scaleX: [0, 3, "easeInQuad"],
-      });
-      const parallaxRotateY = useParallax({
-        rotateY: [0, 360],
-      });
-      const parallaxEasing = useParallax({
-        easing: "easeOutQuad",
-        translateX: [-340, 100],
-      });
-      const parallaxEasingLeft = useParallax({
-        easing: [1, -0.75, 0.5, 1.34],
-        translateX: [0, -260],
-        translateY: [1100],
-      });
-      return (
-        <div>
-          <header>
-            <nav>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact</li>
-              <li>Services</li>
-              <li>Register</li>
-            </nav>
-          </header>
-          <section className="bg-container">
-            <img
-              ref={parallaxRotateY.ref}
-              src="https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            />
-            <div className="absolute-text">
-              <h1 ref={parallaxEasing.ref}>WELCOME</h1>
-              <h2 ref={parallaxEasingLeft.ref}>Get Started</h2>
-            </div>
-          </section>
-          <br />
-          <section className="card-container" ref={scaleCParallax.ref}>
-            <div className="card">
-              <img src="https://images.pexels.com/photos/1181243/pexels-photo-1181243.jpeg?auto=compress&cs=tinysrgb&w=800" />
-              <div>
-                <h2>Programming</h2>
-                <p>
-                  Coding encourages students to think creatively and outside the box
-                  in order to solve problems. They can use their imagination to
-                  create new programs, games, or applications that will benefit
-                  society.
-                </p>
-              </div>
-            </div>
-            <div className="card">
-              <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-              <div>
-                <h2>UI and UX design</h2>
-                <p>
-                  Critical thinking and creative problem-solving are required for UI
-                  and UX design. Students can use their imagination to create
-                  unique, aesthetically pleasing designs that captivate users..
-                </p>
-              </div>
-            </div>
-          </section>
-          <br />
-          <br />
-          <br />
-          
-          <section className="subscribe-section">
-            <p>Kinfly create an account to get started</p>
-            <br />
-            <button>Create an account</button>
-          </section>
+```js
+import "./App.css";
+import { useParallax } from "react-scroll-parallax";
+const App = () => {
+  const scaleCParallax = useParallax({
+    scaleX: [0, 3, "easeInQuad"],
+  });
+  const parallaxRotateY = useParallax({
+    rotateY: [0, 360],
+  });
+  const parallaxEasing = useParallax({
+    easing: "easeOutQuad",
+    translateX: [-340, 100],
+  });
+  const parallaxEasingLeft = useParallax({
+    easing: [1, -0.75, 0.5, 1.34],
+    translateX: [0, -260],
+    translateY: [1100],
+  });
+  return (
+    <div>
+      <header>
+        <nav>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Services</li>
+          <li>Register</li>
+        </nav>
+      </header>
+      <section className="bg-container">
+        <img
+          ref={parallaxRotateY.ref}
+          src="https://images.pexels.com/photos/1454360/pexels-photo-1454360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        />
+        <div className="absolute-text">
+          <h1 ref={parallaxEasing.ref}>WELCOME</h1>
+          <h2 ref={parallaxEasingLeft.ref}>Get Started</h2>
         </div>
-      );
-    };
-    export default App;
+      </section>
+      <br />
+      <section className="card-container" ref={scaleCParallax.ref}>
+        <div className="card">
+          <img src="https://images.pexels.com/photos/1181243/pexels-photo-1181243.jpeg?auto=compress&cs=tinysrgb&w=800" />
+          <div>
+            <h2>Programming</h2>
+            <p>
+              Coding encourages students to think creatively and outside the box
+              in order to solve problems. They can use their imagination to
+              create new programs, games, or applications that will benefit
+              society.
+            </p>
+          </div>
+        </div>
+        <div className="card">
+          <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+          <div>
+            <h2>UI and UX design</h2>
+            <p>
+              Critical thinking and creative problem-solving are required for UI
+              and UX design. Students can use their imagination to create
+              unique, aesthetically pleasing designs that captivate users..
+            </p>
+          </div>
+        </div>
+      </section>
+      <br />
+      <br />
+      <br />
+
+      <section className="subscribe-section">
+        <p>Kinfly create an account to get started</p>
+        <br />
+        <button>Create an account</button>
+      </section>
+    </div>
+  );
+};
+export default App;
+```
 
 CSS:
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: black;
-      color: white;
-    }
-    header nav {
-      display: flex;
-      align-items: center;
-    }
-    header nav li {
-      list-style-type: none;
-      margin-right: 10px;
-      padding: 10px;
-      cursor: pointer;
-    }
-    img {
-      object-fit: cover;
-    }
-    .bg-container {
-      position: relative;
-    }
-    .absolute-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .absolute-text h1 {
-      font-size: 5rem;
-    }
-    .bg-container img {
-      width: 100%;
-      height: 90vh;
-    }
-    .card-container {
-      display: flex;
-      width: 80%;
-      margin: auto;
-    }
-    .card {
-      flex-basis: 50%;
-      margin: 10px;
-      line-height: 1.6;
-    }
-    .card img {
-      width: 100%;
-    }
-    .subscribe-section {
-      width: 80%;
-      display: block;
-      margin: auto;
-      text-align: center;
-      background-color: tan;
-      padding: 20px;
-    }
-    .subscribe-section button {
-      padding: 10px;
-      outline: none;
-      cursor: pointer;
-    }
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav li {
+  list-style-type: none;
+  margin-right: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+img {
+  object-fit: cover;
+}
+.bg-container {
+  position: relative;
+}
+.absolute-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.absolute-text h1 {
+  font-size: 5rem;
+}
+.bg-container img {
+  width: 100%;
+  height: 90vh;
+}
+.card-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.card {
+  flex-basis: 50%;
+  margin: 10px;
+  line-height: 1.6;
+}
+.card img {
+  width: 100%;
+}
+.subscribe-section {
+  width: 80%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  background-color: tan;
+  padding: 20px;
+}
+.subscribe-section button {
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+}
+```
     
 
 

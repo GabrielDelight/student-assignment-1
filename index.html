@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const playlist = [
+        "life breath",
+        "change",
+        "lion king",
+        "Alive",
+        "Hallelujah",
+        "victory",
+      ];
+
+      let index = Math.floor(Math.random() * playlist.length);
+      console.log(index);
+      alert(playlist[index]);
+      if (playlist[index] === "lion king") {
+        let username = prompt("Enter your name");
+        alert("Congratulations " + username + " you have won 100 US Dollars.");
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice</title>
+  </head>
+  <body>
+    <script>
+      let num1 = Math.floor(Math.random() * 6) + 1;
+      let num2 = Math.floor(Math.random() * 6) + 1;
+
+      console.log(`
+
+        Refresh the page generate random numbers
+
+        Number 1: ${num1}
+        _______
+
+        Number 2: ${num2}
+     `);
+
+      if (num1 === 6 && num2 === 6) {
+        let username = prompt("Enter your name");
+        alert("Congratulations " + username + " you have gotten a Double Six");
+      }
+    </script>
+  </body>
+</html>

@@ -160,7 +160,7 @@ Installing and configuring [Locomotive Scroll](https://github.com/locomotivemtl/
 
 Install Locomotive Scroll by running `npm install locomotive-scroll` to get started using it in standard JavaScript. After installing the library, you must configure it using the following code:
 
-```
+```js
 <script src="/node_modules/locomotive-scroll//dist/locomotive-scroll.min.js"></script>
       <script>
         const scroller = new LocomotiveScroll({

@@ -187,10 +187,9 @@ To learn more about Locomotive Scroll usage, kindly [click here.](https://github
 The straightforward website we'll be building with Locomotive Scroll is shown below. I'll be pasting the website's unique custom CSS under the output.
 
 
-![](https://paper-attachments.dropboxusercontent.com/s_4ED9A64DFB2168BA2EA8EFD33459F8B718A94DCB3B06DA78BFBF2EAEE2395C11_1678310690976_ezgif-5-5f959c0636.gif)
 
 
-![](https://im.ezgif.com/tmp/ezgif-1-7cb9223500.gif)
+![](https://im.ezgif.com/tmp/ezgif-1-60bb912f4b.gif)
 
 
 Code:
@@ -356,7 +355,7 @@ const scaleCParallax = useParallax({
 Below is an output of the simple web page I created with react-scroll-parallax:
 
 
-![](https://paper-attachments.dropboxusercontent.com/s_4ED9A64DFB2168BA2EA8EFD33459F8B718A94DCB3B06DA78BFBF2EAEE2395C11_1678314662550_ezgif-4-eafb2bfe64.gif)
+![](https://im5.ezgif.com/tmp/ezgif-5-f3d084ceea.gif)
 
 
 

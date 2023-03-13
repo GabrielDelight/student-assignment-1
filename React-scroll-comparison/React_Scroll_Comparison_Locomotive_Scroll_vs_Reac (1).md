@@ -162,12 +162,12 @@ Install Locomotive Scroll by running `npm install locomotive-scroll` to get star
 
 ```html
 <script src="/node_modules/locomotive-scroll//dist/locomotive-scroll.min.js"></script>
-      <script>
-        const scroller = new LocomotiveScroll({
-          el: document.querySelector("[data-scroll-container]"),
-          smooth: true,
-        });
- </script>
+<script>
+  const scroller = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+  });
+</script>
  ```
       
 

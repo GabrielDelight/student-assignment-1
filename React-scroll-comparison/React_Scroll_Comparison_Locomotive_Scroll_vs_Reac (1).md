@@ -334,7 +334,7 @@ By clicking [here](https://github.com/GabrielDelight/locomotive-scroll-website),
 Installing and configuring React Scroll Parallax is something we'll do in this section. We'll also talk about how to use it to build a basic website in this article.
 Run `npm I react-scroll-parallax` in your terminal to install the library. You must import the library into your React application after installation. Use the code below to import the library:
 
-```ja
+```js
 import { useParallax } from "react-scroll-parallax";
 ```
 

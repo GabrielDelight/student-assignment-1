@@ -190,7 +190,7 @@ The straightforward website we'll be building with Locomotive Scroll is shown be
 ![](https://paper-attachments.dropboxusercontent.com/s_4ED9A64DFB2168BA2EA8EFD33459F8B718A94DCB3B06DA78BFBF2EAEE2395C11_1678310690976_ezgif-5-5f959c0636.gif)
 
 
-![](https://im.ezgif.com/tmp/ezgif-1-60bb912f4b.gif)
+![](https://im.ezgif.com/tmp/ezgif-1-c3ffc2216c.gif)
 
 
 Code:

@@ -1,15 +1,15 @@
 # Mastering ERC20 Token in Solidity
-The article concentrates on the [ERC20 standard,](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) which is widely used to create digital tokens on the Ethereum network. It covers the deployment procedure utilizing [Remix EVM](https://remix.ethereum.org/)  (Ethereum Virtual Machine) and the integration of ERC20 tokens with the Solidity programming language.
+The article concentrates on the [ERC20 standard](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) (Request for Comment) which is widely used to create digital tokens on the Ethereum network . It covers the deployment procedure utilizing [Remix EVM](https://remix.ethereum.org/)  (Ethereum Virtual Machine) and the integration of ERC20 tokens with the Solidity programming language.
 
-Developers can use the information from this article to develop their [digital tokens](https://uk.practicallaw.thomsonreuters.com/w-024-0323?transitionType=Default&contextData=(sc.Default)&firstPage=true) for a variety of purposes, including fundraising, reward schemes, and in-app currency. They can also create decentralized applications ([dApps](https://ethereum.org/en/dapps/)) that use these tokens for transactions like payments and value exchange. Developers that want to take advantage of the Ethereum blockchain's capabilities and design cutting-edge solutions in the decentralized finance ([DeFi](https://ethereum.org/en/defi/)) field must be familiar with the ERC20 standard in Solidity.
+Developers can use the information from this article to develop their [digital tokens](https://uk.practicallaw.thomsonreuters.com/w-024-0323?transitionType=Default&contextData=(sc.Default)&firstPage=true) for a variety of purposes, including fundraising, reward schemes, and in-app currency. They can also create decentralized applications ([dApps](https://ethereum.org/en/dapps/)) that use these tokens for transactions like payments and value exchange. Developers that want to take advantage of the Ethereum blockchain's capabilities and design cutting-edge solutions in the decentralized finance ([DeFi](https://ethereum.org/en/defi/)) field must be familiar with the ERC20 standard in [Solidity](https://soliditylang.org/).
 
 # A Brief History of ERC20 Token
 
-One of the most widely used token specifications on the Ethereum network is ERC20. Because of its simplicity and adaptability, it was swiftly embraced after being introduced by [Fabian Vogelsteller](https://www.linkedin.com/in/fabian-vogelsteller-46365042/?originalSubdomain=de) in November 2015. Smart contracts that establish a set of rules for tokens to abide by are what make ERC20 tokens fungible and simple to maintain.
+One of the most widely used token specifications on the [Ethereum network](https://ethereum.org/en/developers/docs/networks/) is ERC20. Because of its simplicity and adaptability, it was swiftly embraced after being introduced by [Fabian Vogelsteller](https://www.linkedin.com/in/fabian-vogelsteller-46365042/?originalSubdomain=de) in November 2015. Smart contracts that establish a set of rules for tokens to abide by are what make ERC20 tokens fungible and simple to maintain.
 
 The creation and management of tokens by businesses and people have been completely transformed by the standardization of ERC20 tokens. It was challenging for developers to guarantee compatibility with other tokens and wallets before ERC20 because each token had to be designed from the ground up. Developers can use ERC20 to build tokens that work with any wallet or exchange that accepts the standard.
 
-Thousands of tokens on the [Ethereum network,](https://ethereum.org/en/) including some of the biggest and most valuable ones like Chainlink, Binance Coin, and Tether, have been built on the ERC20 standard since its debut. Several token standards, including [ERC721](https://docs.openzeppelin.com/contracts/3.x/erc721#:~:text=ERC721%20is%20a%20standard%20for,across%20a%20number%20of%20contracts.) (for non-fungible tokens) and [ERC1155](https://docs.openzeppelin.com/contracts/3.x/erc1155#:~:text=ERC1155%20is%20a%20novel%20token,their%20guides%20before%20moving%20on.), were also influenced by the standard (multi-fungible tokens). ERC20 has been crucial to the expansion and improvement of the Ethereum ecosystem.
+Thousands of tokens on the [Ethereum network,](https://ethereum.org/en/) including some of the biggest and most valuable ones like [Chainlink](https://chain.link/), [Binance Coin](https://www.binance.com/en-NG/price/bnb), and [Tether](https://tether.to/en/), have been built on the ERC20 standard since its debut. Several token standards, including [ERC721](https://docs.openzeppelin.com/contracts/3.x/erc721#:~:text=ERC721%20is%20a%20standard%20for,across%20a%20number%20of%20contracts.) (for non-fungible tokens) and [ERC1155](https://docs.openzeppelin.com/contracts/3.x/erc1155#:~:text=ERC1155%20is%20a%20novel%20token,their%20guides%20before%20moving%20on.), were also influenced by the standard (multi-fungible tokens). ERC20 has been crucial to the expansion and improvement of the Ethereum ecosystem.
 
 
 
@@ -34,7 +34,7 @@ In the Ethereum blockchain, token creation is governed by the [ERC20 technical s
 
 # How Does ERC20 Token Work?
 
-[Tokens](https://www.coinbase.com/learn/crypto-basics/what-is-a-token) must adhere to a set of guidelines outlined by ERC20 to be deemed ERC20-compliant. These guidelines include [computer languag](https://en.wikipedia.org/wiki/Computer_language#:~:text=A%20computer%20language%20is%20a,problem%20solution%20to%20a%20computer)e features that facilitate simple interoperability across various wallets, exchanges, and [decentralized apps.](https://www.techtarget.com/iotagenda/definition/blockchain-dApp#:~:text=A%20decentralized%20application%20(dApp)%20is,than%20on%20a%20single%20computer.) As a result, the [Ethereum ecosystem](https://ethereum.org/en/) makes it simple to trade and use tokens that adhere to the ERC20 standard.
+[Tokens](https://www.coinbase.com/learn/crypto-basics/what-is-a-token) must adhere to a set of guidelines outlined by ERC20 to be deemed ERC20-compliant. These guidelines include [computer language](https://en.wikipedia.org/wiki/Computer_language#:~:text=A%20computer%20language%20is%20a,problem%20solution%20to%20a%20computer) features that facilitate simple interoperability across various wallets, exchanges, and [decentralized apps.](https://www.techtarget.com/iotagenda/definition/blockchain-dApp#:~:text=A%20decentralized%20application%20(dApp)%20is,than%20on%20a%20single%20computer.) As a result, the [Ethereum ecosystem](https://ethereum.org/en/) makes it simple to trade and use tokens that adhere to the ERC20 standard.
 
 The details of the agreement between the buyer and seller are immediately entered into code and implemented as smart contracts, which are self-executing contracts. The token's supply is held by these smart contracts, which also enforce the ERC20 standard's restrictions. An ERC20 token transaction is documented on the Ethereum blockchain and the token balance is updated when a user delivers an ERC20 token to another user. 
 
@@ -45,7 +45,7 @@ The Ethereum blockchain uses a set of rules and specifications called the ERC20 
 
 - Token Name: This is what the token is called.
 - [Symbol](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#IERC20Metadata-symbol--): The token's identifying mark.
-- [Decimal points:](https://ethereum.org/en/developers/docs/standards/tokens/erc-777/#decimals) The number of decimal points used to represent the token. One token, for instance, is equal to 1000000000000000000 (1018) units if the token has 18 decimal places.
+- [Decimal points:](https://ethereum.org/en/developers/docs/standards/tokens/erc-777/#decimals) The number of decimal points used to represent the token. One token, for instance, is equal to 1000000000000000000 (10^18) units if the token has 18 decimal places.
 - [TotalSupply](https://ethereum.org/en/developers/docs/standards/tokens/erc-4626/#totalsupply): The total quantity of tokens that will be issued is known as the total supply.
 - [BalanceOf](https://ethereum.org/en/developers/docs/standards/tokens/erc-4626/#balanceof): This function returns the token's balance.
 - [Transfer](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#IERC20-transfer-address-uint256-): The ability to move tokens from one address to another via this function.
@@ -64,7 +64,7 @@ Below are just a few examples of [ERC20 tokens](https://ethereum.org/en/develope
 
 - [USDT (Tether):](https://tether.to/) Tether is a stable coin that is tied to the US dollar, with each USDT token standing in for one dollar. Tether is an ERC20 token that is frequently used as a stablecoin for trading and money transfers on different cryptocurrency exchanges.
 - LINK ([Chainlink](https://chain.link/)): Chainlink is a decentralized oracle network that links smart contracts to outside data sources. The LINK currency is used to reward node operators for providing correct data to the network.
-- BAT (Basic Attention Token): The Brave browser ecosystem uses Basic Attention Token to compensate users for viewing adverts. On the platform, the token can be used to pay for premium products or services.
+- [BAT](https://basicattentiontoken.org/) (Basic Attention Token): The [Brave browser](https://brave.com/) ecosystem uses Basic Attention Token to compensate users for viewing adverts. On the platform, the token can be used to pay for premium products or services.
 - OMG ([OmiseGO](https://www.abra.com/cryptocurrency/omise-go/)): OmiseGO is a blockchain-based payment system that enables quick, safe, and inexpensive payments. On the platform, [OMG tokens](https://www.kraken.com/learn/what-is-omisego-omg) are utilized as a medium of trade.
 - REP (Augur): Augur is a decentralized platform for prediction markets that enables users to build and trade their own. The REP token is used on the platform to report the results of events and to reward truthful reporting.
 
@@ -188,7 +188,7 @@ contract MyToken is ERC20Capped, ERC20Burnable {
     }
 }
 ```
-
+## The Code Structure 
 The above code is a Solidity smart contract that establishes a custom ERC20 token titled "MyToken." It inherits three [OpenZeppelin ERC20-related contracts](https://docs.openzeppelin.com/contracts/4.x/erc20): [ERC20Capped](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#ERC20Capped)`, `[ERC20Burnable](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#ERC20Burnable)`, and `[ERC20](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#ERC20)`. These contracts set a maximum token supply, permit tokens to be burned, and provide basic functionality for an ERC20 token.
 
 The contract includes two public state variables: `owner` and `blockReward`. The `owner` variable signifies the owner of the contract, while the `blockReward` variable denotes the amount of tokens awarded to the miner who mines the block containing a transfer.
@@ -201,7 +201,7 @@ The contract includes a [public function](https://docs.soliditylang.org/en/v0.8.
 
 
 
-## Deploying the contract:
+## Deploying the contract
 
 To deploy the [smart contract](https://ethereum.org/en/developers/docs/smart-contracts/#:~:text=A%20%22smart%20contract%22%20is%20simply,be%20the%20target%20of%20transactions.), we will continue to use [Remix](https://remix.ethereum.org/), the platform where we developed the smart contract. Remix offers a user-friendly deployment process that is simple and easy to use. In this section, we will provide a step-by-step guide to deploying the smart contract using Remix.
 The deployment process is straightforward and can be initiated by following these steps:
@@ -232,7 +232,7 @@ Step 3: Once the dropdown mentioned in Step 2 is clicked, the deployment user in
 ![](https://paper-attachments.dropboxusercontent.com/s_04D9A06549A669201DAE34C458EDFFCE4EA71BB6460C09D727180843C004F704_1680519175380_Screenshot+2023-04-03+at+11.40.25+AM.png)
 
 
-**Step 5:** once you click on the newly created contract, you will be able to see the list of public functions and events that were previously discussed. When you click on the functions button, you will be able to view details such as the token name, token symbol, total supply, block reward, and cap values that were added during deployment. It's important to note that the [cap](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#ERC20Capped) value is initially set at 100 million with 18 zeros. This is a representation of [wei](https://www.investopedia.com/terms/w/wei.asp), which is the smallest unit.
+**Step 5:** Once you click on the newly created contract, you will be able to see the list of public functions and events that were previously discussed. When you click on the functions button, you will be able to view details such as the token name, token symbol, total supply, block reward, and cap values that were added during deployment. It's important to note that the [cap](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#ERC20Capped) value is initially set at 100 million with 18 zeros. This is a representation of [wei](https://www.investopedia.com/terms/w/wei.asp), which is the smallest unit.
 
 
 
